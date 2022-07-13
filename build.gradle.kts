@@ -3,7 +3,7 @@ plugins {
     application
 }
 
-val vertxVersion = "4.3.2"
+val vertxVersion = "3.9.13"
 
 repositories {
     mavenCentral()
@@ -14,6 +14,7 @@ dependencies {
     implementation("io.vertx:vertx-core")
     implementation("io.vertx:vertx-rx-java2")
     implementation("io.vertx:vertx-jdbc-client")
+    implementation("io.vertx:vertx-sql-common")
     runtimeOnly("mysql:mysql-connector-java:8.0.29")
 }
 
